@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="Debug 模 式"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/sunny_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="晴天"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/rainy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="雨天"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/cloudy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="阴天"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/sun_rainy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="太阳雨"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/light_rainy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="雷雨"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/rainstorm_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="暴雨"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/meteor_rainy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="流星雨"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/bt_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="变态的天气"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/snowy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="下雪天"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/big_snowy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="大雪纷飞"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/rain_snowy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="雨夹雪"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/middle_snowy_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="中雪"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/fog_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="雾霾、沙尘"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/frost_day"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="霜冻、结冰"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/analyse_day"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="天气内存分析"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/debug"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="进入内存调试"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

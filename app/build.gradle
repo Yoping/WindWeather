@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.yubin.mywindweather"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 3
+        versionName "1.0.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //Bugly设置支持的SO库架构
+//            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            abiFilters 'armeabi' , 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+
+        }
+
+        //签名配配置
+        signingConfigs {
+            release {
+                storeFile file("D:\\android_tool\\keystore\\mykey\\yubinkeystore.jks")
+                storePassword "992063727"
+                keyAlias "MyWindWeather"
+                keyPassword "992063727"
+            }
+        }
+
+        buildTypes {
+//            debug {
+//                //debug模式下面使用这个正式版的签名文件进行签名
+//                signingConfig signingConfigs.release
+//            }
+            release {
+                minifyEnabled false
+                aaptOptions.cruncherEnabled = false
+                aaptOptions.useNewCruncher = false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+
+
+    }
+
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        compile 'com.android.support:appcompat-v7:25.1.1'
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:design:25.1.1'
+        //Json解析框架
+        compile 'com.google.code.gson:gson:2.8.0'
+        compile files('libs/volley.jar')
+
+        /** 腾讯Bugly **/
+        //compile 'com.tencent.bugly:crashreport:latest.release'//其中lasest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+
+        /** 微信SDK **/
+        compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+
+        /** QQ分享SDK **/
+        compile files('libs/open_sdk_r5886_lite.jar')
+
+
+        /** 腾讯Bugly 和 自动更新SDK **/
+        compile 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.0.0
+        compile 'com.tencent.bugly:nativecrashreport:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+
+
+    }
+}

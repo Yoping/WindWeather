@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by YUBIN at 17-12-6 下午2:48
+  ~ Last modified at 17-6-14 上午11:51
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+
+        android:duration="200"
+        android:fromXScale="100%"
+        android:fromYScale="100%"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="94%"
+        android:toYScale="96%"></scale>
+
+    <scale
+        android:startOffset="200"
+        android:duration="200"
+        android:fromXScale="94%"
+        android:fromYScale="96%"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="97%"
+        android:toYScale="99%"></scale>
+    <scale
+        android:startOffset="400"
+        android:duration="200"
+        android:fromXScale="97%"
+        android:fromYScale="99%"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="94%"
+        android:toYScale="96%"></scale>
+    <scale
+        android:startOffset="600"
+        android:duration="200"
+        android:fromXScale="96%"
+        android:fromYScale="96%"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="120%"
+        android:toYScale="120%"></scale>
+
+
+</set>

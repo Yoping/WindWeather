@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="作者吃瓜去了。。"
+        android:textColor="@color/text_color"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@mipmap/logo2"
+                android:gravity="center"
+                android:text="多风的天气"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/cloud_b_02" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/cloud_a_02" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@mipmap/a_sun_04">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@mipmap/a_sun_01"
+                        android:src="@mipmap/a_sun_03" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/cloud_b_02" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="\t\t青绿的草地，旋转的风车，漂浮的云朵，倾泄的雨水，飘落的雪花，轰鸣的雷电，闪烁的星星，耀眼的太阳，阴晴圆缺的月亮，划破天际的流星以及沿屏幕滑落的水滴，随着你所在地天气的变化和白天黑夜的轮转将会出现阴、晴、雨、雪、雾、霾、霜、冰、雷、电、风、暴等24种不断变换的动态天气场景。"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom"
+                    android:background="@mipmap/a_land_01" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:background="@mipmap/windmill" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@mipmap/windmill" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="70dp"
+                    android:layout_marginLeft="170dp"
+                    android:background="@mipmap/windmill" />
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@mipmap/d_star" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@mipmap/d_star" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@mipmap/d_star" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="\t\t本壁纸的原型为三星的一个系统应用，做为一个曾经的三星党，作者很喜欢这个壁纸，但是很可惜这个应用只存在于三星的ROM中，反编译之后发现它不仅与三星的某些守护进程相关联，同时也必须配合某几个天气应用才能正常使用。"
+                    android:textColor="@color/text_color" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@mipmap/moon_04" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@mipmap/d_meteor" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:padding="10dp"
+                android:text="\t\t网上也有人提取和修改过该应用，但是只有一种天气，失去了这个壁纸最核心的功能，作者找了好久都没有找到满意的版本，很是无奈，于是就自己动手重写了一个。"
+                android:textColor="@color/text_color" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:background="@mipmap/zhenyu_min"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="\t\t作者在原来的天气基础上增加了一些其它的场景，并且内置了天气预报的功能以及硬件加速的开关，使本应用内容更加丰富和合理。如果你在使用过程中遇到了什么问题和Bug，可以在评论中给作者留言，以便作者对其进行修复。"
+                android:textColor="@color/text_color" />
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@mipmap/g_lightning_02"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@mipmap/e_snow_01"/>
+                <ImageView
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="10dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/e_snow_01"/>
+                <ImageView
+                    android:layout_marginTop="90dp"
+                    android:layout_width="20dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/e_snow_02"/>
+                <ImageView
+                    android:layout_marginTop="110dp"
+                    android:layout_width="12dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_height="12dp"
+                    android:background="@mipmap/e_snow_02"/>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="155dp"
+                    android:background="@mipmap/e_snow_02"/>
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="10dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/e_snow_01"/>
+                <ImageView
+                    android:layout_marginTop="60dp"
+                    android:layout_width="20dp"
+                    android:layout_marginLeft="135dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/e_snow_02"/>
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="18dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_height="18dp"
+                    android:background="@mipmap/e_snow_01"/>
+                <ImageView
+                    android:layout_marginTop="150dp"
+                    android:layout_width="20dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/e_snow_01"/>
+                <ImageView
+                    android:layout_marginTop="90dp"
+                    android:layout_width="15dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_height="15dp"
+                    android:background="@mipmap/e_snow_01"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@mipmap/e_snow_01"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="\t\t 本应用不以盈利为目的，仅供学习交流使用，所以也没有添加那些令人厌烦的广告，但是如果你觉得这个应用不错，也可以通过微信转账的方式对作者进行打赏，支持和鼓励作者继续进行升级和创作。当然，为了感谢支持者，打赏之后你也将获得更加高级的白天黑夜轮转、流星雨、雷暴等一系列高级功能。"
+                android:textColor="@color/text_color" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="\t\t 以下是作者的微信打赏二维码:"
+                android:textColor="@color/text_color" />
+
+            <ImageView
+                android:id="@+id/iv_code_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="20dp"
+                android:src="@mipmap/wechat_pay" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打赏步骤："
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.长按转账二维码图片进行保存。"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.进入微信将本图片发送给自己。"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.长按图片识别图中二维码。"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.打赏作者。"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Best wishes , enjoy it !"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:text="作者：吃瓜群众"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="分  享"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_background"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

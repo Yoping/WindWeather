@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="custom_dailog_bg">#33000000</color>
+    <color name="custom_dailog_window_bg">#00000000</color>
+
+    <color name="bg_color">#00b0ff</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#00b0ff</color>
+    <color name="blue2">#ff0085d0</color>
+    <color name="green">#ff4caf50</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="text_color2">#ff0085d0</color>
+
+
+    <!-- 背景颜色 -->
+    <color name="background">#fff0f0f0</color>
+    <!-- 浅蓝色，应用主颜色 -->
+    <color name="light_blue">#ff0085d0</color>
+    <!-- 灰色，用于浅色字体 -->
+    <color name="grey">#ff919191</color>
+    <!-- 浅黑色，用于深色字体 -->
+    <color name="light_black">#ff7a7a7a</color>
+
+    <color name="text_light_color">#ffafafaf</color>
+    <color name="custom_image_background">#66000000</color>
+
+    <!-- 浅灰色，用于线条 -->
+    <color name="light_grey">#ffdedede</color>
+
+    <!-- 在线状态 -->
+    <color name="yuandian_hong">#ffd00010</color>
+    <color name="yuandian_lv">#ff00d01d</color>
+
+
+    <color name="text_color_red">#EF5C4A</color>
+
+
+</resources>

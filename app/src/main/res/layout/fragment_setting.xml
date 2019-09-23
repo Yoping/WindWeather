@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="注意:请在系统壁纸设置中将该程序设置为壁纸使之生效。"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_set_as_wallpaper"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:text="快 捷 设 置"
+                android:background="@drawable/round_background"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity=""
+                android:text="\t\t说明：由于动态壁纸本身就是一种高耗能的应用，而本壁纸的功能、场景又足够复杂，所以CPU和内存的占用都会比较高，虽然作者已经尽可能的优化了内存的使用，但是还是会占用相当一部分的内存，而CPU的使用则与其本身的性能和画面流畅度相关，这个作者无法改变，只能通过硬件加速来进行平衡。所以，如有介意者慎用。"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\t\t硬件加速说明：如果您的手机CPU性能稍差，画面出现卡顿的现象，可以尝试通过打开本开关强制进行硬件加速，以获得流畅的画面，同时可以减小CPU的计算压力，但是该功能会增加一倍的内存使用。（该功能只适用于Android 6.0以上系统。）"
+                    android:textColor="@color/text_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="硬件加速："
+                        android:textColor="@color/text_color" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_hardware_speed_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_open_hardware_speed_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开启"
+                            android:textColor="@color/text_color" />
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_close_hardware_speed_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关闭"
+                            android:textColor="@color/text_color" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="注意：如果开、关硬件加速之后出现壁纸黑屏的现象，可以先将壁纸设置为其它，然后再设置回来。"
+                    android:textColor="@color/text_color" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textColor="@color/text_color"
+                android:text="\t\t由于当地天气信息的数据是从网络上面抓取的，稳定性和正确性都有可能出现偏差，所以有时候会出现定位失败、或者数据错误的现象，根据用户的反馈增加了这个随机天气的开关，如果你所在地无法定位或者无法取得天气数据时，可以打开本开关获取随机天气。当然，作者也在尽量寻找一个稳定可靠又免费的数据源。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/text_color"
+                    android:text="天气类型："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:id="@+id/radio_group_random_weather"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_close_random_weather"
+                        android:textColor="@color/text_color"
+                        android:text="当地天气"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/radio_btn_open_random_weather"
+                        android:textColor="@color/text_color"
+                        android:text="随机天气"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

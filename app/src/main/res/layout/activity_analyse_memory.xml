@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_analyse_memory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yubin.mywindweather.ui.activity.AnalyseMemoryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="近处的草"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_grass_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_grass_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="远处的草"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_grass2_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_grass2_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="天空"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_sky_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_sky_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="星空"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_stary_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_stary_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="风车"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_windmill_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_windmill_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="降落的雨"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_rains_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_rains_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="月亮"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_moon_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_moon_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="星星"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_stars_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_stars_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="云"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_clouds_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_clouds_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="水滴"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_waters_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_waters_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="闪电"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_lightnings_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_lightnings_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="太阳"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_sun_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_sun_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="流星"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_meteor_true"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_meteor_false"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_background"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

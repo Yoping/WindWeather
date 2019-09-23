@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_open_super_func"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.yubin.mywindweather.ui.activity.OpenSuperFuncActivity">
+
+    <TextView
+        android:background="@drawable/gradual_bg"
+        android:textColor="@color/white"
+
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="多 风 的 天 气"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:visibility="invisible"
+        android:background="@color/text_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Thank you !"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_super_func_info_1"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\t恭喜你！虽然打赏还未开始，但是高级功能已经为你开通了。作者既然已经说明了不以盈利为目的，就不想再以技术手段强迫那些不想花钱却又想要获得高级功能的人去进行打赏，没有一种服务是免费的，也没有一种事情是必须的，想要获得旗舰版APP花点钱那是天经地义的事情，但是作者更愿意为你的诚信买单，也愿意去相信那些坚定不移地点击“确定”按钮的用户，更愿意接受那些真正的支持者的打赏。"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_super_func_info_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="\t\t如果你有心打赏，那就请继续后面的步骤，不要停。"
+                android:textColor="@color/white" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_super_func_info_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="\t\t如果你无心打赏，那高级功能就算便宜你了。"
+                android:textColor="@color/white" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_super_func_info_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="\t\tBest wishes to honest children !"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_super_func_info_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:text="作者：吃瓜群众"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_marginBottom="100dp"
+                android:visibility="invisible"
+                android:id="@+id/tv_open_wechat"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/white"
+                android:background="@drawable/round_background"
+                android:text="打 开 微 信"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
